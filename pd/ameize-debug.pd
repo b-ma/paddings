@@ -1,0 +1,10 @@
+#N canvas 0 23 450 300 10;
+#X obj 116 60 spigot;
+#X obj 149 40 value ameize_debug;
+#X obj 149 19 loadbang;
+#X obj 109 19 inlet;
+#X obj 117 82 print \$1-\$2;
+#X connect 0 0 4 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;

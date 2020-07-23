@@ -1,0 +1,14 @@
+#N canvas 601 196 539 374 10;
+#X obj 62 306 dac~ 1;
+#X text 61 41 \$1 id;
+#X text 61 63 \$2 name;
+#X text 61 85 \$3 default value;
+#X obj 233 17 ameize-debug-activate;
+#X obj 63 180 osc~ 220;
+#X obj 62 275 *~, f 4;
+#X obj 88 225 ameize-parameter~ \$0 gain 0;
+#X obj 63 127 ameize-parameter~ \$0 frequency 440;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 1;
+#X connect 8 0 5 0;

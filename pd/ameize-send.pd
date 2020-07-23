@@ -1,0 +1,8 @@
+#N canvas 0 23 586 190 10;
+#X obj 37 37 inlet;
+#X obj 37 97 send \$1-\$2;
+#X obj 175 96 ameize-debug \$1 ameize-send-\$2;
+#X obj 37 60 t a a;
+#X connect 0 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 1 2 0;
